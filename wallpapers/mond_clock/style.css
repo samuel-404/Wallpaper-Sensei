@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.container {
+    text-align: center;
+    /* Subtle shadow for readability on light wallpapers */
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+#day {
+    font-size: 8rem; /* Large */
+    font-weight: 900; /* Bold/Black */
+    letter-spacing: 0.2em; /* Wide spacing */
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0.2em;
+    /* Optical correction for letter spacing */
+    margin-right: -0.2em;
+}
+
+#date {
+    font-size: 1.5rem;
+    font-weight: 600; /* Semi-Bold */
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+
+#time {
+    font-size: 2rem;
+    font-weight: 300; /* Light */
+    letter-spacing: 0.1em;
+    opacity: 0.9;
+}
